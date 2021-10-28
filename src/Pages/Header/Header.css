@@ -1,0 +1,29 @@
+.nav{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    margin-right: 30px;
+    font-weight: 700;
+}
+
+.user-btn{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+.nav-options{
+    margin-left: 80%;
+}
+
+@media only screen and (max-width: 440px) {
+    .user-btn{
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        margin-left: 0px;
+        font-weight: 700;
+    }
+}
