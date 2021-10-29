@@ -1,0 +1,28 @@
+/* .myOrders-body{
+    height: 100%;
+} */
+
+.details-title{
+    background: #F4F7FC;
+    display: flex;
+    padding: 5px;
+    margin-top: 120px;
+}
+
+.order-item{
+    margin: auto;
+    background: #F4F7FC;
+    padding: 5px;
+}
+
+.section-body{
+    display: flex;
+    background: #F4F7FC;
+    margin-top: 6%;
+}
+li{
+    color: #6e6d6d;
+    margin: auto;
+    padding: 10px 0px;
+    list-style: none;
+}

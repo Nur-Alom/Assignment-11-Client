@@ -3,7 +3,10 @@
     color: white;
     align-items: center;
     margin-right: 30px;
-    font-weight: 700;
+}
+
+.nav:hover{
+    color: lightgreen;
 }
 
 .user-btn{
@@ -11,7 +14,6 @@
     color: white;
     align-items: center;
     margin-left: 40px;
-    font-weight: 700;
 }
 
 .nav-options{
@@ -24,6 +26,5 @@
         color: white;
         align-items: center;
         margin-left: 0px;
-        font-weight: 700;
     }
 }

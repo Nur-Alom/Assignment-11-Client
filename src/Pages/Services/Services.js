@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 const Services = (props) => {
-    const { id, shortDis, img, title, price } = props.service;
+    const { _id, shortDis, img, title, price, Location } = props.service;
 
 
     return (
@@ -14,11 +14,12 @@ const Services = (props) => {
                 <Card.Body>
                     <Card.Title><span className="fw-bold"></span> {title}</Card.Title>
                     <Card.Text><span className="fw-bold">Price:</span> {price}</Card.Text>
+                    <Card.Text><span className="fw-bold">Location:</span> {Location}</Card.Text>
                     <hr />
                     <Card.Text>{shortDis}</Card.Text>
                     <hr />
                     <div className="my-2">
-                        <NavLink to={`/pack/${id}`} className="detail-btn rounded-pill">BookNow</NavLink>
+                        <NavLink to={`/pack/${_id}`} className="detail-btn rounded-pill">BookNow</NavLink>
                     </div>
                 </Card.Body>
             </Card>
