@@ -1,0 +1,31 @@
+
+.site-logo{
+    padding-top: 100px;
+}
+
+.login-home{
+    border-radius: 35px;
+    padding: 140px 10px;
+    margin: 5% 22%;
+    box-shadow: 10px 10px 50px gray;
+}
+
+.section{
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.google-btn{
+    background-color: white;
+    color: #494848;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin-top: 5px;
+    padding-right: 100px;
+    font-weight: bold;
+}
+
+.register-toggle{
+    text-decoration: none;
+    color: blue;
+}

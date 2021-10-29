@@ -10,6 +10,7 @@ import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Header from './Pages/Header/Header';
 import Footer from './Pages/Footer/Footer';
+import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/pack/:id">
+            <PlaceOrder></PlaceOrder>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
