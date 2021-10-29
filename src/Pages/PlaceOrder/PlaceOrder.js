@@ -9,7 +9,7 @@ const PlaceOrder = () => {
     const [service, setService] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${packId}`)
+        fetch(`https://peaceful-island-09936.herokuapp.com/services/${packId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, []);
