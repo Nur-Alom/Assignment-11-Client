@@ -11,7 +11,7 @@ const MyOrders = () => {
     // console.log(params);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/ordersItem/${id}`)
+        fetch(`https://peaceful-island-09936.herokuapp.com/ordersItem/${id}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, []);

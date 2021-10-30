@@ -6,7 +6,7 @@ const ManageOrders = () => {
     const [orderItem, setOrderItem] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/ordersItem')
+        fetch('https://peaceful-island-09936.herokuapp.com/ordersItem')
             .then(res => res.json())
             .then(data => setOrderItem(data))
     }, [orderItem]);
