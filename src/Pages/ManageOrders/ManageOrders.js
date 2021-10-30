@@ -13,7 +13,7 @@ const ManageOrders = () => {
 
     return (
         <div className="myOrders-body">
-            <div className="sticky-top">
+            <div className="">
                 <ul className="d-flex container order-item">
                     <li>Name <i className="fas fa-arrow-down"></i></li>
                     <li>Email <i className="fas fa-arrow-down"></i></li>

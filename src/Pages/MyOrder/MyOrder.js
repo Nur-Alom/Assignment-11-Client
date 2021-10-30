@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ManageOrder = (props) => {
+const MyOrder = (props) => {
 
     const handleDelete = (id) => {
-        const process = window.confirm('Are you sure, you wants to Delete this item');
+        const process = window.confirm('Are you sure, you wants to delete this item')
         if (process) {
             const url = `https://peaceful-island-09936.herokuapp.com/ordersItem/${id}`
             fetch(url, {
@@ -14,22 +14,23 @@ const ManageOrder = (props) => {
                     if (data.deletedCount > 0) {
                         alert('Delete Order Successfully!!');
                     }
-                })
+                });
         }
     };
 
-    const { _id, name, email, packKey } = props.order
+    const { _id, name, address, packKey } = props.order;
+    console.log(_id, name);
     return (
-        <div className="">
+        <div>
             <div className="container section-body">
                 <ul className="order-item">
                     <li className="text-success">{name}</li>
                 </ul>
                 <ul className="order-item">
-                    <li className="text-success">{email}</li>
+                    <li className="text-success">{address}</li>
                 </ul>
                 <ul className="order-item">
-                    <li className="text-success">Id: {packKey}</li>
+                    <li className="text-success">{packKey}</li>
                 </ul>
                 <ul className="order-item">
                     <li><button onClick={() => handleDelete(_id)} className="delete-btn">Delete <i className="fas fa-trash-alt"></i></button></li>
@@ -39,4 +40,4 @@ const ManageOrder = (props) => {
     );
 };
 
-export default ManageOrder;
+export default MyOrder;
