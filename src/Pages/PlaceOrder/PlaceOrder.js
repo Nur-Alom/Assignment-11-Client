@@ -28,7 +28,7 @@ const PlaceOrder = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/ordersItem', data)
+        axios.post('https://peaceful-island-09936.herokuapp.com/ordersItem', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Congratulation!! Your Order Place Successfully')
