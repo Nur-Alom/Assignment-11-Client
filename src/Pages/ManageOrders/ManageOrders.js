@@ -1,28 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import ManageOrder from '../ManageOrder/ManageOrder';
 import './ManageOrders.css';
 
 const ManageOrders = () => {
+    const [orderItem, setOrderItem] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/ordersItem')
+            .then(res => res.json())
+            .then(data => setOrderItem(data))
+    }, [orderItem]);
+
     return (
-        <div className="my-5">
-            <div className="myOrders-body">
-                <div className="container section-body">
-                    <ul className="order-item">
-                        <li>Name <i className="fas fa-arrow-down"></i></li>
-                        <li>someone</li>
-                    </ul>
-                    <ul className="order-item">
-                        <li>Email <i className="fas fa-arrow-down"></i></li>
-                        <li>someone</li>
-                    </ul>
-                    <ul className="order-item">
-                        <li>Package <i className="fas fa-arrow-down"></i></li>
-                        <li>Khulna</li>
-                    </ul>
-                    <ul className="order-item">
-                        <li>Action <i className="fas fa-arrow-down"></i></li>
-                        <li>Delete</li>
-                    </ul>
-                </div>
+        <div className="myOrders-body">
+            <div className="sticky-top">
+                <ul className="d-flex container order-item">
+                    <li>Name <i className="fas fa-arrow-down"></i></li>
+                    <li>Email <i className="fas fa-arrow-down"></i></li>
+                    <li>Package <i className="fas fa-arrow-down"></i></li>
+                    <li>Action <i className="fas fa-arrow-down"></i></li>
+                </ul>
+            </div>
+            <div className="">
+                {
+                    orderItem.map(order => <ManageOrder
+                        key={order._id}
+                        order={order}
+                    ></ManageOrder>)
+                }
             </div>
         </div>
     );

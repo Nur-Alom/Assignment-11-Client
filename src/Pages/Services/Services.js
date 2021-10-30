@@ -19,7 +19,7 @@ const Services = (props) => {
                     <Card.Text>{shortDis}</Card.Text>
                     <hr />
                     <div className="my-2">
-                        <NavLink to={`/pack/${_id}`} className="detail-btn rounded-pill">BookNow</NavLink>
+                        <NavLink to={`/pack/${_id}`} className="detail-btn rounded-pill">Buy Package</NavLink>
                     </div>
                 </Card.Body>
             </Card>

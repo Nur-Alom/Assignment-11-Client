@@ -1,28 +1,31 @@
-/* .myOrders-body{
-    height: 100%;
-} */
-
-.details-title{
-    background: #F4F7FC;
-    display: flex;
-    padding: 5px;
-    margin-top: 120px;
+.myOrders-body{
+    margin-top: 8%;
 }
 
 .order-item{
     margin: auto;
     background: #F4F7FC;
     padding: 5px;
+    border-radius: 10px;
 }
 
 .section-body{
     display: flex;
     background: #F4F7FC;
-    margin-top: 6%;
+    margin-top: 1%;
+    border-radius: 10px;
 }
 li{
     color: #6e6d6d;
     margin: auto;
-    padding: 10px 0px;
+    padding: 10px 5px;
     list-style: none;
+}
+
+.delete-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 17px;
 }
