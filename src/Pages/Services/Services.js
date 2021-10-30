@@ -6,7 +6,6 @@ import { NavLink } from 'react-router-dom';
 const Services = (props) => {
     const { _id, shortDis, img, title, price, Location } = props.service;
 
-
     return (
         <div className="col-md-4 my-3 me-0">
             <Card className="" style={{ width: '20rem', height: "36rem" }}>

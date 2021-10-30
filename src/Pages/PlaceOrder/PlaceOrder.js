@@ -27,7 +27,6 @@ const PlaceOrder = () => {
     // React Hook Form for sent data ui to database.
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        console.log(data)
         axios.post('https://peaceful-island-09936.herokuapp.com/ordersItem', data)
             .then(res => {
                 if (res.data.insertedId) {

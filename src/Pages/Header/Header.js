@@ -18,6 +18,7 @@ const Header = () => {
                             <NavLink className="nav" to="/home">Home</NavLink>
                             {users.email ? <NavLink className="nav" to="/myOrders">My Orders</NavLink> : ''}
                             {users.email ? <NavLink className="nav" to="/manageOrders">Manage Orders</NavLink> : ''}
+                            {users.email ? <NavLink className="nav" to="/addService">Add New Service</NavLink> : ''}
                             {users.email ? <p style={{ color: "white", margin: "5px" }}>| {users.displayName}</p> : ''}
                             {!users.email ?
                                 <NavLink className="user-btn bg-success text-white py-1 px-3 rounded-3" to="/login"><i className="fas fa-sign-in-alt"></i> Login</NavLink> :

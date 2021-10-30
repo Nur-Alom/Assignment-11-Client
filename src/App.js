@@ -14,6 +14,7 @@ import MyOrders from './Pages/MyOrders/MyOrders';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import ManageOrders from './Pages/ManageOrders/ManageOrders';
+import AddNewService from './Pages/AddNewService/AddNewService';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/myOrders">
               <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/addService">
+              <AddNewService></AddNewService>
             </PrivateRoute>
             <PrivateRoute path="/pack/:packId">
               <PlaceOrder></PlaceOrder>
