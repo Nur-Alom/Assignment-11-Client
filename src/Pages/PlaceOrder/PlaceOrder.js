@@ -42,13 +42,13 @@ const PlaceOrder = () => {
         <div className="orders-body">
             <div className="d-flex align-items-center item-detail">
                 <img style={{ width: "300px" }} src={img} alt="" />
-                <div className="pack-details">
+                <div className="pack-details border-start px-3">
                     <h2>{title}</h2>
                     <hr />
                     <br />
-                    <p className="text-start"><strong>Price: </strong>{price}</p>
-                    <p className="text-start"><strong>Tour-Time: </strong>{tourTime}</p>
-                    <p className="text-start"><strong>Tour-Location: </strong>{Location}</p>
+                    <p className="text-start"><strong className="text-success">Price: </strong>{price}</p>
+                    <p className="text-start"><strong className="text-success">Tour-Time: </strong>{tourTime}</p>
+                    <p className="text-start"><strong className="text-success">Tour-Location: </strong>{Location}</p>
                 </div>
             </div>
             <div className="customer-info">

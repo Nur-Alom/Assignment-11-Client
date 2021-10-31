@@ -12,14 +12,13 @@ const MyOrder = (props) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        alert('Delete Order Successfully!!');
+                        alert('Order Delete Successfully!!');
                     }
                 });
         }
     };
 
     const { _id, name, address, packKey } = props.order;
-    console.log(_id, name);
     return (
         <div>
             <div className="container section-body">
