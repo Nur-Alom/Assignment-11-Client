@@ -1,20 +1,14 @@
 
-.site-logo{
-    padding-top: 100px;
-}
-
 .login-home{
     border-radius: 35px;
     padding: 140px 10px;
-    margin: 5% 22%;
+    margin: 8% 22%;
     box-shadow: 10px 10px 50px gray;
 }
-
 .section{
     background-color: white;
     margin-bottom: 15px;
 }
-
 .google-btn{
     background-color: white;
     color: #494848;
@@ -24,8 +18,29 @@
     padding-right: 100px;
     font-weight: bold;
 }
+.google-img{
+    width: 40px;
+    margin-right: 70px;
+}
 
-.register-toggle{
-    text-decoration: none;
-    color: blue;
+@media only screen and (max-width: 440px) {
+    .login-home{
+        border-radius: 35px;
+        padding: 15px 10px;
+        margin: 50% 10%;
+        box-shadow: 10px 10px 50px gray;
+    }
+    .google-btn{
+        background-color: white;
+        color: #494848;
+        border: 1px solid lightgray;
+        border-radius: 25px;
+        margin-top: 5px;
+        padding-right: 50px;
+        font-weight: bold;
+    }
+    .google-img{
+        width: 40px;
+        margin-right: 0px!important;
+    }
 }

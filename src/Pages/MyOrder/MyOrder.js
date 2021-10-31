@@ -32,7 +32,7 @@ const MyOrder = (props) => {
                     <li className="text-success">{packKey}</li>
                 </ul>
                 <ul className="order-item">
-                    <li className="text-success">{status}</li>
+                    <li className="text-info">{status}</li>
                 </ul>
                 <ul className="order-item">
                     <li><button onClick={() => handleDelete(_id)} className="delete-btn">Delete <i className="fas fa-trash-alt"></i></button></li>
