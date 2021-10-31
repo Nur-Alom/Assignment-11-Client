@@ -15,10 +15,11 @@ const ManageOrders = () => {
         <div className="myOrders-body">
             <div className="">
                 <ul className="d-flex container order-item">
-                    <li>Name <i className="fas fa-arrow-down"></i></li>
-                    <li>Email <i className="fas fa-arrow-down"></i></li>
-                    <li>Package <i className="fas fa-arrow-down"></i></li>
-                    <li>Action <i className="fas fa-arrow-down"></i></li>
+                    <li>Name  <i className="fas fa-arrow-down"></i></li>
+                    <li>Email  <i className="fas fa-arrow-down"></i></li>
+                    <li>Package  <i className="fas fa-arrow-down"></i></li>
+                    <li>Status  <i className="fas fa-arrow-down"></i></li>
+                    <li>Action  <i className="fas fa-arrow-down"></i></li>
                 </ul>
             </div>
             <div className="">

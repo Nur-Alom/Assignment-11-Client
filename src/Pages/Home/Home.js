@@ -20,7 +20,7 @@ const Home = () => {
             <div>
                 <img style={{ width: "100%", height: "90%" }} src={banner} alt="" />
             </div>
-            <h1 className="my-5 text-warning">----------Our Top Services----------</h1>
+            <h1 className="my-5 text-warning">Our Top Services</h1>
             <hr style={{ width: "80%", marginLeft: "9%", }} />
             <div className="container row">
                 {

@@ -15,11 +15,17 @@
     margin-top: 1%;
     border-radius: 10px;
 }
-li{
+.p{
     color: #6e6d6d;
     margin: auto;
     padding: 10px 5px;
     list-style: none;
+}
+
+.status-btn{
+    border: none;
+    background-color: #F4F7FC;
+    color: pink;
 }
 
 .delete-btn{

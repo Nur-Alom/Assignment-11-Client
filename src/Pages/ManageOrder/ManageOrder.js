@@ -2,6 +2,31 @@ import React from 'react';
 
 const ManageOrder = (props) => {
 
+    // Update status Function.
+    const handleStatus = (id) => {
+        const Status = prompt('Please Input Your Update Status..');
+        console.log(Status);
+        const updateStatus = { status: Status };
+        if (Status) {
+            const url = `http://localhost:5000/ordersItem/${id}`
+            fetch(url, {
+                method: "PUT",
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(updateStatus)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.modifiedCount > 0) {
+                        alert('Your Status Updated Successfully..')
+                    }
+                });
+        }
+    };
+
+
+    // Delete order Function.
     const handleDelete = (id) => {
         const process = window.confirm('Are you sure, you wants to Delete this item');
         if (process) {
@@ -18,7 +43,7 @@ const ManageOrder = (props) => {
         }
     };
 
-    const { _id, name, email, packKey } = props.order
+    const { _id, name, email, packKey, status } = props.order
     return (
         <div className="">
             <div className="container section-body">
@@ -29,7 +54,10 @@ const ManageOrder = (props) => {
                     <li className="text-success">{email}</li>
                 </ul>
                 <ul className="order-item">
-                    <li className="text-success">Id: {packKey}</li>
+                    <li className="text-success">{packKey}</li>
+                </ul>
+                <ul className="order-item">
+                    <li className="text-info">{status}<button onClick={() => handleStatus(_id)} className="status-btn"><i className="fas fa-edit"></i></button></li>
                 </ul>
                 <ul className="order-item">
                     <li><button onClick={() => handleDelete(_id)} className="delete-btn">Delete <i className="fas fa-trash-alt"></i></button></li>

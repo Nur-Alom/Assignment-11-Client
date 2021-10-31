@@ -17,7 +17,7 @@ const Header = () => {
                         <Nav className="ms-auto nav-options">
                             <NavLink className="nav" to="/home">Home</NavLink>
                             {users.email ? <NavLink className="nav" to="/myOrders">My Orders</NavLink> : ''}
-                            {users.email ? <NavLink className="nav" to="/manageOrders">Manage Orders</NavLink> : ''}
+                            {users.email ? <NavLink className="nav" to="/manageAllOrders">Manage All Orders</NavLink> : ''}
                             {users.email ? <NavLink className="nav" to="/addService">Add New Service</NavLink> : ''}
                             {users.email ? <p style={{ color: "white", margin: "5px" }}>| {users.displayName}</p> : ''}
                             {!users.email ?

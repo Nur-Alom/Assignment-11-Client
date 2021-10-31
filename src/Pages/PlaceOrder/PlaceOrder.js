@@ -40,34 +40,32 @@ const PlaceOrder = () => {
 
     return (
         <div className="orders-body">
-            <div className="d-flex align-items-center flex-column item-detail">
-                <img style={{ width: "600px" }} src={img} alt="" />
+            <div className="d-flex align-items-center item-detail">
+                <img style={{ width: "300px" }} src={img} alt="" />
                 <div className="pack-details">
                     <h2>{title}</h2>
+                    <hr />
                     <br />
-                    <strong>Price: {price}</strong> required
-                    <br />
-                    <strong>Tour-Time: {tourTime}</strong>
-                    <br />
-                    <p><strong>Tour-Location: </strong>{Location}</p>
+                    <p className="text-start"><strong>Price: </strong>{price}</p>
+                    <p className="text-start"><strong>Tour-Time: </strong>{tourTime}</p>
+                    <p className="text-start"><strong>Tour-Location: </strong>{Location}</p>
                 </div>
             </div>
             <div className="customer-info">
                 <form onSubmit={handleSubmit(onSubmit)} className="input-form">
                     <h4 className="my-4">Fill This Form Please</h4>
                     <hr />
-                    <input value={packId} className="register-input" type="text" {...register("packKey")} required />
-                    <br />
+                    <input value={packId} className="register-input d-none" type="text" {...register("packKey")} required />
                     <input value={title} className="register-input" type="text" {...register("packTitle")} required />
+                    <input value={'pending'} className="register-input d-none" type="text" {...register("status")} required />
                     <br />
                     <input value={users.displayName} className="register-input" {...register("name")} required />
                     <br />
                     <input value={users.email} className="register-input" {...register("email")} required />
                     <br />
-                    <input className="register-input" type="number" {...register("number")} placeholder="Number" required />
+                    <input className="register-input" type="number" {...register("number")} placeholder="Number" maxLength="11" required />
                     <br />
-                    <input className="register-input" type="text" {...register("address")} placeholder="Address" required />
-
+                    <input className="register-input" type="text" {...register("address")} placeholder="Address" maxLength="40" required />
                     <br />
                     <input className="register-submit" type="submit" value="Order Place" />
                 </form>
