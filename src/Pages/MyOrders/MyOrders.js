@@ -25,6 +25,7 @@ const MyOrders = () => {
                     <li>Name <i className="fas fa-arrow-down"></i></li>
                     <li>Address <i className="fas fa-arrow-down"></i></li>
                     <li>Package <i className="fas fa-arrow-down"></i></li>
+                    <li>Status <i className="fas fa-arrow-down"></i></li>
                     <li>Action <i className="fas fa-arrow-down"></i></li>
                 </ul>
             </div>

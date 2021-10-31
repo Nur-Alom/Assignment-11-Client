@@ -4,8 +4,7 @@ const ManageOrder = (props) => {
 
     // Update status Function.
     const handleStatus = (id) => {
-        const Status = prompt('Please Input Your Update Status..');
-        console.log(Status);
+        const Status = 'Approved';
         const updateStatus = { status: Status };
         if (Status) {
             const url = `https://peaceful-island-09936.herokuapp.com/ordersItem/${id}`

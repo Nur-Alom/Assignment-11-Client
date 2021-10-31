@@ -18,7 +18,7 @@ const MyOrder = (props) => {
         }
     };
 
-    const { _id, name, address, packKey } = props.order;
+    const { _id, name, address, packKey, status } = props.order;
     return (
         <div>
             <div className="container section-body">
@@ -30,6 +30,9 @@ const MyOrder = (props) => {
                 </ul>
                 <ul className="order-item">
                     <li className="text-success">{packKey}</li>
+                </ul>
+                <ul className="order-item">
+                    <li className="text-success">{status}</li>
                 </ul>
                 <ul className="order-item">
                     <li><button onClick={() => handleDelete(_id)} className="delete-btn">Delete <i className="fas fa-trash-alt"></i></button></li>

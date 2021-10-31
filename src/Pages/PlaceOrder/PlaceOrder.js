@@ -65,7 +65,7 @@ const PlaceOrder = () => {
                     <br />
                     <input className="register-input" type="number" {...register("number")} placeholder="Number" maxLength="11" required />
                     <br />
-                    <input className="register-input" type="text" {...register("address")} placeholder="Address" maxLength="40" required />
+                    <input className="register-input" type="text" {...register("address")} placeholder="Picking Location" maxLength="40" required />
                     <br />
                     <input className="register-submit" type="submit" value="Order Place" />
                 </form>
