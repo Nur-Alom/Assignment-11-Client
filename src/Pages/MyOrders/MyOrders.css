@@ -29,3 +29,19 @@ li{
     padding: 5px 20px;
     border-radius: 17px;
 }
+
+@media only screen and (max-width: 480px) {
+    .item-count{
+        display: none;
+    }
+    .section-body{
+        display: flex;
+        flex-direction: column;
+        background: #F4F7FC;
+        margin-top: 25%!important;
+        border-radius: 10px;
+    }
+    .orders-item{
+        margin: 30px;
+    }
+}

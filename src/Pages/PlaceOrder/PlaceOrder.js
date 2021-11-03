@@ -40,10 +40,10 @@ const PlaceOrder = () => {
 
     return (
         <div className="orders-body">
-            <div className="d-flex align-items-center item-detail">
+            <div className="item-detail">
                 <img style={{ width: "300px" }} src={img} alt="" />
-                <div className="pack-details border-start px-3">
-                    <h2>{title}</h2>
+                <div className="pack-details px-3">
+                    <h2 className="mt-3">{title}</h2>
                     <hr />
                     <br />
                     <p className="text-start"><strong className="text-success">Price: </strong>{price}</p>

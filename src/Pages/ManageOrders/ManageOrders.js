@@ -13,7 +13,7 @@ const ManageOrders = () => {
 
     return (
         <div className="myOrders-body">
-            <div className="">
+            <div className="item-count">
                 <ul className="d-flex container order-item">
                     <li>Name  <i className="fas fa-arrow-down"></i></li>
                     <li>Email  <i className="fas fa-arrow-down"></i></li>
@@ -22,7 +22,7 @@ const ManageOrders = () => {
                     <li>Action  <i className="fas fa-arrow-down"></i></li>
                 </ul>
             </div>
-            <div className="">
+            <div className="orders-item">
                 {
                     orderItem.map(order => <ManageOrder
                         key={order._id}

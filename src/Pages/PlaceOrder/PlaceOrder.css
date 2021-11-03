@@ -11,8 +11,11 @@
 
 .pack-details{
     margin-left: 10px;
+    border-left: 1px solid lightgray;
 }
 .item-detail{
+    display: flex;
+    align-items: center;
     margin-left: 5%;
 }
 
@@ -53,4 +56,35 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+
+@media only screen and (max-width: 480px) {
+    .orders-body{
+        margin-top: 30%;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .item-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 3%;
+    }
+    .pack-details{
+        margin-bottom: 50px;
+        margin-left: 10px;
+        border-left: 0px;
+    }
+    .register-input{
+        width: 80%;
+        padding: 10px 5px 9px 5px;
+        border-top: 0px;
+        border-right: 0px;
+        border-left:0px;
+        border-bottom: 1px solid lightgray;
+        margin: 10px 65px 10px 35px;
+    }
 }

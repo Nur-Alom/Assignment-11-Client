@@ -23,7 +23,7 @@
     margin-right: 70px;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 480px) {
     .login-home{
         border-radius: 35px;
         padding: 15px 10px;

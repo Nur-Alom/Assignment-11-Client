@@ -23,7 +23,7 @@ const AddNewService = () => {
                 <h1>Explore-BD</h1>
                 <img style={{ width: "40px" }} src={img} alt="" />
             </div>
-            <hr style={{ width: "20%", marginLeft: "40%" }} />
+            <hr className="hr" style={{ width: "30%", marginLeft: "35%" }} />
             <strong className="fs-4">To Add a New Service Please Fill The Form Below.. </strong>
             <hr />
             <div>

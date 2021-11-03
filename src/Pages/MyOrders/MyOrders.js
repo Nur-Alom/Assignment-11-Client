@@ -20,7 +20,7 @@ const MyOrders = () => {
 
     return (
         <div className="myOrders-body">
-            <div className="">
+            <div className="item-count">
                 <ul className="d-flex container order-item">
                     <li>Name <i className="fas fa-arrow-down"></i></li>
                     <li>Address <i className="fas fa-arrow-down"></i></li>
@@ -29,7 +29,7 @@ const MyOrders = () => {
                     <li>Action <i className="fas fa-arrow-down"></i></li>
                 </ul>
             </div>
-            <div>
+            <div className="orders-item">
                 {
                     orders.map(order => <MyOrder
                         key={order._id}

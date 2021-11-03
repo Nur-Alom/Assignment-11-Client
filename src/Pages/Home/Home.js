@@ -29,32 +29,33 @@ const Home = () => {
                         service={service}
                     ></Services>)
                 }
+                <hr />
             </div>
             <div>
                 <h1 className="text-warning">Why Choose ExploreBD</h1>
-                <hr style={{ width: "80%", marginLeft: "9%", }} />
+                <hr style={{ width: "50%", marginLeft: "25%", }} />
                 <div className="row">
-                    <article style={{ padding: "30px" }} className="col-md-4">
+                    <article className="col-md-4">
                         <h2>TINY GROUPS</h2>
                         <p>Personalized experience on every tour with us. 5 Travelers per group maximum. Private tours are also available.</p>
                     </article>
-                    <article style={{ padding: "30px" }} className="col-md-4">
+                    <article className="col-md-4">
                         <h2>LOWER PRICE</h2>
                         <p>Compared to any of your home operators. Book directly and cut the middleman. Save money, travel more.</p>
                     </article>
-                    <article style={{ padding: "30px" }} className="col-md-4">
+                    <article className="col-md-4">
                         <h2>SCHEDULED TOURS</h2>
                         <p>Regularly scheduled tours. Suitable for solo travelers to join and reduce cost. Single Supplement also available.</p>
                     </article>
-                    <article style={{ padding: "30px" }} className="col-md-4">
+                    <article className="col-md-4">
                         <h2>HIGHEST QUALITY</h2>
                         <p>350+ reviews and 5/5 rating on TripAdvisor. Awarded Certificate of Excellence in 2015, 2016, 2017, 2018 and 2019 consecutively.</p>
                     </article>
-                    <article style={{ padding: "30px" }} className="col-md-4">
+                    <article className="col-md-4">
                         <h2>LOCAL EXPERIENCE</h2>
                         <p>Experienced local guides with vast local knowledge. Have an authentic local experience focusing on people and culture.</p>
                     </article>
-                    <article style={{ padding: "30px" }} className="col-md-4">
+                    <article className="col-md-4">
                         <h2>LOCAL COMPANY</h2>
                         <p>100% Of your money spent goes directly to the locals. No commission to the foreign agencies online or offline.</p>
                     </article>

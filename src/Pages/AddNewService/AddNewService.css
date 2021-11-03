@@ -9,10 +9,6 @@
     justify-content: center;
 }
 
-/* .newService-form{
-    background: #F4F7FC;
-} */
-
 .newService-input-section{
     display: flex;
     justify-content: space-evenly;
@@ -38,4 +34,22 @@
     margin: 20px 0px 20px 81%;
     border: none;
     border-radius: 27px;
+}
+
+@media only screen and (max-width:480px) {
+    .newService-body{
+        margin-top: 20%;
+    }
+    .hr{
+        width: 60%!important;
+        margin-left: 20%!important;
+    }
+    .newService-submit{
+        background-color: green;
+        color: white;
+        padding: 10px 40px;
+        margin: 20px 0px 20px 0px;
+        border: none;
+        border-radius: 27px;
+    }
 }
