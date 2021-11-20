@@ -8,7 +8,15 @@ const AddNewService = () => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
-        axios.post('https://peaceful-island-09936.herokuapp.com/services', data)
+        console.log(data)
+        const formData = new FormData();
+        formData.append('image', data.img[0])
+        formData.append('location', data.Location)
+        formData.append('title', data.title)
+        formData.append('price', data.price)
+        formData.append('tTime', data.tourTime)
+        formData.append('dis', data.shortDis)
+        axios.post('http://localhost:5000/services', formData)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Congratulation!! Your Services Added Successfully')
@@ -30,21 +38,21 @@ const AddNewService = () => {
                 <form className="newService-form" onSubmit={handleSubmit(onSubmit)}>
                     <div className="newService-field">
                         <div className="newService-input-section">
-                            <input type="url" className="newService-input" {...register("img")} placeholder="Image Link" required />
-                            <br />
                             <input className="newService-input" {...register("title")} placeholder="Title" required />
                             <br />
-                        </div>
-                        <div className="newService-input-section">
                             <input type="number" className="newService-input" {...register("price")} placeholder="Price" required />
                             <br />
+                        </div>
+                        <div className="newService-input-section">
                             <input className="newService-input" {...register("shortDis")} placeholder="Description" maxLength="105" required />
+                            <br />
+                            <input className="newService-input" {...register("Location")} placeholder="Location" required />
                             <br />
                         </div>
                         <div className="newService-input-section">
-                            <input className="newService-input" {...register("Location")} placeholder="Location" required />
-                            <br />
                             <input className="newService-input" {...register("tourTime")} placeholder="Tour-Time" maxLength="105" required />
+                            <br />
+                            <input type="file" className="newService-input" {...register("img")} placeholder="Image Link" required />
                             <br />
                         </div>
                         <input className="newService-submit" type="submit" />

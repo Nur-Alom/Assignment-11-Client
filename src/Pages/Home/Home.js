@@ -15,6 +15,7 @@ const Home = () => {
             .then(data => setServices(data))
     }, []);
 
+
     return (
         <div>
             <div>
