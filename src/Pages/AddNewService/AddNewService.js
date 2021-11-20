@@ -16,7 +16,7 @@ const AddNewService = () => {
         formData.append('price', data.price)
         formData.append('tTime', data.tourTime)
         formData.append('dis', data.shortDis)
-        axios.post('http://localhost:5000/services', formData)
+        axios.post('https://peaceful-island-09936.herokuapp.com/services', formData)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Congratulation!! Your Services Added Successfully')
