@@ -3,16 +3,16 @@ import './PlaceOrder.css';
 import { useForm } from "react-hook-form";
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { useHistory, useLocation, useParams } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 import axios from 'axios';
+import { useNavigate, useLocation, useParams } from 'react-router-dom';
 
 const PlaceOrder = () => {
     const { users } = useAuth();
     const { packId } = useParams();
     const [service, setService] = useState({});
     const location = useLocation();
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const redirect = location.state || '/home';
 
@@ -31,7 +31,7 @@ const PlaceOrder = () => {
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Congratulation!! Your Order Place Successfully')
-                    history.push(redirect);
+                    navigate(redirect);
                 }
             })
     };

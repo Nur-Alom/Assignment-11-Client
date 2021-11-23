@@ -2,18 +2,18 @@ import React from 'react';
 import './Login.css';
 import imgGoogle from '../../images/imageedit_google.png';
 import useAuth from '../../Hooks/useAuth';
-import { useHistory, useLocation } from 'react-router';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Login = () => {
     const { GoogleLogin } = useAuth();
     const location = useLocation();
-    const history = useHistory();
+    const navigate = useNavigate();
     const redirect = location.state?.from || './home';
 
     const handleLogin = () => {
         GoogleLogin()
             .then((result) => {
-                history.push(redirect)
+                navigate(redirect)
             })
             .catch((error) => {
                 console.log(error.message)
