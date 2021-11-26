@@ -21,7 +21,7 @@ const PlaceOrder = () => {
         fetch(`https://peaceful-island-09936.herokuapp.com/services/${packId}`)
             .then(res => res.json())
             .then(data => setService(data))
-    }, []);
+    }, [packId]);
 
 
     // React Hook Form for sent data ui to database.
@@ -41,12 +41,12 @@ const PlaceOrder = () => {
     return (
         <div className="orders-body">
             <div className="item-detail">
-                <img style={{ width: "300px" }} src={img} alt="" />
+                <img style={{ width: "300px" }} src={`data:image/png;base64,${img}`} alt="" />
                 <div className="pack-details px-3">
                     <h2 className="mt-3">{title}</h2>
                     <hr />
                     <br />
-                    <p className="text-start"><strong className="text-success">Price: </strong>{price}</p>
+                    <p className="text-start"><strong className="text-success">Price: </strong>{price}-BDT</p>
                     <p className="text-start"><strong className="text-success">Tour-Time: </strong>{tourTime}</p>
                     <p className="text-start"><strong className="text-success">Tour-Location: </strong>{Location}</p>
                 </div>

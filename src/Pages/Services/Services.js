@@ -12,7 +12,7 @@ const Services = (props) => {
                 <Card.Img variant="top" style={{ height: '250px' }} src={`data:image/png;base64,${img}`} />
                 <Card.Body>
                     <Card.Title><span className="fw-bold"></span> {title}</Card.Title>
-                    <Card.Text><span className="fw-bold">Price:</span> {price}</Card.Text>
+                    <Card.Text><span className="fw-bold">Price:</span> {price}-BDT</Card.Text>
                     <Card.Text><span className="fw-bold">Location:</span> {Location}</Card.Text>
                     <hr />
                     <Card.Text>{shortDis}</Card.Text>

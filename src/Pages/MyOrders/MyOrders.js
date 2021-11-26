@@ -16,7 +16,7 @@ const MyOrders = () => {
                 const result = data?.filter(dt => dt.email === users.email);
                 setOrders(result);
             })
-    }, [orders]);
+    }, [orders, users.email]);
 
     return (
         <div className="myOrders-body">
